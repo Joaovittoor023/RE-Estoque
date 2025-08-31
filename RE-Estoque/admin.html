@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo Admin</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+
+    <button type="button" id="voltar-admin">
+        <img src="/assets/esquerda2.png" alt="Voltar">
+    </button>
+
+    <div class="container">
+        <h1>MODO ADMIN</h1>
+
+        <!-- Mensagens de retorno -->
+        <p id="mensagem"></p>
+
+        <!-- Formulário Produto -->
+        <form id="AdminFormProduto">
+            <div class="form-group">
+                <label for="addProduto">Adicionar novo Produto para o Auto-Complete</label>
+                <input type="text" id="addProduto" placeholder="Digite o nome do produto" maxlength="80" required>
+                <div class="botoes">
+                    <button type="submit">Adicionar Produto</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Formulário Defeito -->
+        <form id="AdminFormDefeito">
+            <div class="form-group">
+                <label for="addDefeito">Adicionar novo Defeito para o Auto-Complete</label>
+                <input type="text" id="addDefeito" placeholder="Digite o nome do defeito" maxlength="80" required>
+                <div class="botoes">
+                    <button type="submit">Adicionar Defeito</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

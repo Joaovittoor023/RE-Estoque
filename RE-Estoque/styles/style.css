@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #212121;
+}
+
+.container {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    padding: 32px 40px;
+    width: 420px;
+    max-width: 90%;
+}
+
+h1 {
+    color: #1B5E20;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 16px;
+    color: #424242;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+
+.form-group,
+.form-produtos,
+.form-lote {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #424242;
+    margin-bottom: -10px;
+}
+
+input, select, textarea {
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #2E7D32;
+    box-shadow: 0 0 4px rgba(46, 125, 50, 0.25);
+}
+
+textarea {
+    resize: none;
+    min-height: 70px;
+}
+
+.botoes {
+    margin-bottom: 30px;
+    margin-top: -8px;
+}
+
+button, 
+#btn-enviar-lote,
+#btn-entrar {
+    background-color: #2E7D32;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#voltar-produtos,
+#voltar-admin,
+#voltar-lotes {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#voltar-produtos img,
+#voltar-admin img,
+#voltar-lotes img {
+    width: 40px;
+    height: auto;
+    display: block;
+}
+
+#proximo {
+    display: none;
+}
+
+#anterior {
+    background-color: #bfd733;
+}
+
+button:hover, 
+#btn-enviar-lote:hover,
+#btn-entrar:hover {
+    background-color: #1B5E20;
+}
+
+button.secondary {
+    background-color: #FFFFFF;
+    color: #2E7D32;
+    border: 1px solid #2E7D32;
+}
+
+button.secondary:hover {
+    background-color: #F1F8F6;
+}
+
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 24px;
+    }
+}

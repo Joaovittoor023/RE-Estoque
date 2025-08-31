@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produtos</title>
+  <link rel="stylesheet" href="/styles/style.css" />
+</head>
+<body>
+  <button type="button" id="voltar-produtos">
+    <img src="/assets/esquerda2.png" alt="Voltar" />
+  </button>
+
+  <div class="container">
+    <h1>Identificação do produto</h1>
+    <h3>Quantidade feita: <b>01</b></h3>
+
+    <!-- IMPORTANTE: use id="ProdutosForm" (não action="ProdutosForm") -->
+    <form id="ProdutosForm">
+      <div class="form-produtos">
+
+        <label for="descproduto">Descreva o produto*</label>
+        <!-- list aponta para o datalist -->
+        <input
+          type="text"
+          id="descproduto"
+          name="descricaoproduto"
+          list="listaProdutos"
+          required
+          maxlength="80"
+          placeholder="Ex.: Liquidificador Arno"
+        />
+        <datalist id="listaProdutos"></datalist>
+
+        <label for="defeitoproduto">Defeito*</label>
+        <input
+          type="text"
+          id="defeitoproduto"
+          name="defeito"
+          list="listaDefeitos"
+          required
+          maxlength="60"
+          placeholder="Ex.: Não liga"
+        />
+        <datalist id="listaDefeitos"></datalist>
+
+        <label for="obsproduto">Observação</label>
+        <input type="text" id="obsproduto" name="observacao" maxlength="100" />
+
+        <!-- Esses botões NÃO devem submeter o form -->
+        <div class="botoes">
+          <button type="button" id="anterior">Anterior</button>
+          <button type="button" id="proximo">Próximo</button>
+          <button type="submit" id="enviar">Enviar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
